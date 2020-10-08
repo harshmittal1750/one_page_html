@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <style type = "text/css">
+  body{
+    margin: 0;
+    padding: 0;
+    background: none;
+    background-size: cover;
+  }
+  .app{
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    background: url(bg1.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 25px;
+    color: #fff;
+  }
+  .app h1{
+    margin-top: 10px;
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+    font-size: 30px;
+  }
+  .photo{
+    border-radius: 20px;
+  }
+  .app input[type=text]{
+    display: block;
+    width: 50%;
+    padding: 0 16px;
+    height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 25px;
+    font-family: "montserrat", sans-serif;
+  }
+  .add{
+    border-radius: 10px;
+  }
+  .app input[type=submit], [type=reset]{
+    margin: 20px auto;
+    display: block;
+    width: 100%;
+    padding: 0 16px;
+    height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 25px;
+    font-family: "montserrat", sans-serif;
+  }
+  .app input[type = radio]{
+    margin: 20px;
+  }
+  .app input[type = checkbox]{
+    margin: 10px;
+  }
+</style>
+    <title>Application Form Page</title>
+  </head>
+  <body>
+    <div class="app">
+      <form class="" action="index.html" method="post">
+        <h1><u><center>Application Form</center></u></h1>
+        <img src="picture1.jpg" height = "100px" width="100px" align = right class = photo>
+        <input type="text" name="" placeholder="Name"><br>
+        <input type="text" name="" placeholder="Father's Name"><br>
+         <textarea name="name" rows="8" cols="20" placeholder="Address" class = add></textarea><br>
+        Gender :
+        <input type="radio" name="" value="male" class = txt>Male
+        <input type="radio" name="" value="female" class = txt>Female<br>
+        Hobbies :
+        <input type="checkbox" name="" value="Football">Football
+        <input type="checkbox" name="" value="Gaming">Gaming
+        <br>
+        <input type="checkbox" name="" value="Coding">Coding
+        <input type="checkbox" name="" value="others">Others
+        <br>
+        <input type="submit" name="" value="Submit">
+        <input type="reset" name="" value="Reset">
+
+      </form>
+
+    </div>
+
+
+  </body>
+</html>
