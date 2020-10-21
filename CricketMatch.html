@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LiveCricketMatchBroadCasting</title>
+  </head>
+  <body>
+    <script>
+      var x,
+        y,
+        win,
+        overs,
+        p,
+        weather,
+        run,
+        t1runs = 0,
+        t2runs = 0,
+        out1 = 0,
+        Playing = 1,
+        k,
+        d;
+      var toss = ["Head", "Tail"];
+      var score = ["6", "0", "2", "1", "5", "4", "3"];
+      Match();
+      Toss();
+      Call();
+      if (p == x) {
+        p = y;
+      }
+      if (p == y) {
+        p = x;
+      }
+      alert(
+        "Now 2nd inning is started and " +
+          k +
+          " have to chase target " +
+          t1runs +
+          " on " +
+          overs +
+          " Overs"
+      );
+      Playing = 2;
+      t2runs = t1runs;
+      t1runs = 0;
+      out1 = 0;
+      Call();
+      function Match() {
+        alert("Welcome to an exciting cricket match");
+        x = prompt("enter name of 1st team");
+        document.write("Team 1= " + x);
+        y = prompt("enter name of second team");
+        document.write("<br>Team 2= " + y);
+        x = x.toUpperCase();
+        y = y.toUpperCase();
+        overs = prompt("Enter number of overs");
+        weather = prompt("Todays weather update\n1:Rainy" + " 2:foggy");
+        sleepFor(1000);
+        alert(
+          "MATCH will play BETWEEN..." +
+            "\n" +
+            x +
+            "  VS  " +
+            y +
+            " of " +
+            overs +
+            " OVERS"
+        );
+      }
+      function Toss() {
+        sleepFor(3000);
+        var t = prompt(
+          "Toss between Two Teams\nTeam " +
+            x +
+            " will select\n1: Head" +
+            " 2: Tail"
+        );
+        win = Math.floor(Math.random() * toss.length);
+        alert("Coins goes up...............");
+        sleepFor(1000);
+        if (toss[win] == t) {
+          alert("So its " + toss[win] + " Team " + x + " will go for Bat");
+          p = x;
+        } else {
+          alert("So its " + toss[win] + " Team " + y + " will go for Bat");
+          p = y;
+        }
+        sleepFor(2000);
+        if (weather == "Rainy") {
+          alert("Match is delayed for 5s due to Rainy weather");
+          sleepFor(5000);
+        }
+        if (weather == "Foggy") {
+          alert("Match is delayed for 10s due to Foggy weather");
+          sleepFor(10000);
+        }
+        alert(overs + " Overs Match is started," + p + " is to bat");
+        document.write(
+          "<br>First innings is started Team " + p + " is to bat first"
+        );
+        if (p == x) {
+          k = y;
+        } else {
+          k = x;
+        }
+      }
+      function sleepFor(sleepDuration) {
+        var now = new Date().getTime();
+        while (new Date().getTime() < now + sleepDuration) {}
+      }
+      function Call() {
+        var i, b;
+        for (i = 1; i <= overs; i++) {
+          if (out1 < 10) {
+            sleepFor(2000);
+            alert("Over #" + i + " is started");
+            for (b = 1; b <= 6; b++) {
+              if (out1 < 10) {
+                run = Math.floor(Math.random() * score.length);
+                if (score[run] == "0") {
+                  sleepFor(2000);
+                  alert("its Out on ball " + b);
+                  ++out1;
+                }
+                if (
+                  score[run] == "1" ||
+                  score[run] == "2" ||
+                  score[run] == "3" ||
+                  score[run] == "5"
+                ) {
+                  sleepFor(1000);
+                }
+                if (score[run] == "4" || score[run] == "6") {
+                  sleepFor(1000);
+                  alert("nice shot its a " + score[run] + " on ball " + b);
+                }
+                t1runs = Number(t1runs) + Number(score[run]);
+                if (Playing == 2 && t1runs > t2runs) {
+                  break;
+                }
+              } else {
+                alert("ops all team is out and inning is finished");
+                break;
+              }
+            }
+            if (Playing == 2 && t1runs > t2runs) {
+              break;
+            } else {
+              alert("after " + i + " Over\nScore= " + t1runs + "/" + out1);
+            }
+          } else {
+            break;
+          }
+        }
+        if (Playing == 2 && t1runs > t2runs) {
+          alert(
+            "Congratulations " +
+              p +
+              " Has won the Match in " +
+              i +
+              " Overs and current score is " +
+              t1runs +
+              "/" +
+              out1
+          );
+        }
+        if (Playing == 2 && t1runs == t2runs) {
+          alert("Match is draw between " + x + " and " + y);
+        } else {
+          if (Playing == 1) {
+            ++t1runs;
+            alert(
+              "Total Target= " +
+                t1runs +
+                "/" +
+                out1 +
+                " and overs played " +
+                --i
+            );
+          }
+          if (Playing == 2 && t1runs < t2runs) {
+            alert(
+              "Ops Chasing Team " +
+                p +
+                " loss the match and \nCongratulations!! Team " +
+                y +
+                " Won the match"
+            );
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
