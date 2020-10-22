@@ -1,0 +1,103 @@
+.carousel-item img{
+    width:auto;
+    height:500px;
+}
+.navbar-brand{
+    font-family:'blackadderITC','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+.marketing{
+text-align: center;
+box-shadow: 2px solid black;
+}
+.btn-secondry{
+    background-color:#87142b;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    margin-bottom: 90px;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .col-sm-12 > .flip-card{
+    margin-bottom: 180px;
+  }
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .col-md-4 >.flip-card{
+    width:auto;
+    align-content: center;
+  }  
+  /* Style the back side */
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+ 
+  .col-lg-3 img {
+
+    max-width: 235px;
+    max-height: 242px;
+  }
+  .col-lg-3 {
+    display: inline-block;
+      margin-left: -4px;
+      margin-top: 8px;
+      min-width: 220px;
+  }
+  .card-text {
+    width: 220px;
+    height: 70px;
+    overflow: hidden;
+  }
+  .more{
+   font-size: 16px;
+   margin:0px auto 3px auto;
+   text-align: center;
+  }
+  .more:hover{
+    color: black;
+  }
+  .price {
+    color: blue;
+    font-weight: bold;
+  }
+.input-group {
+  margin:2px auto 3px 40px;
+}
+.input-group label{
+
+  margin-right:30px;
+  margin-top: 3px;
+   text-transform: capitalize;
+}
+.input-group select{
+  width: 250px;
+  text-transform: capitalize;
+}
+.input-group-text{
+  min-height: 30px;
+background-color:#007bff;
+color: white;
+height: 41px; 
+}
