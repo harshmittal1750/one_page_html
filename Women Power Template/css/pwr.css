@@ -1,0 +1,170 @@
+.navigation_part{
+    background-color: black ;
+    opacity: 0.8 ;
+    /* background: transparent; */
+    z-index: 1;
+}
+.navigation_part button{
+    background-color: red !important; 
+}
+.main_nav a{
+    font-size: 16px;
+}
+.nav_options a:hover{
+    transition: color 0.3s;
+    color: rgb(228, 128, 145);
+}
+.test{
+    background-image: url('ice-fire.jpg');
+    background-size: cover;
+    height: 500px;
+}
+.closing{
+    cursor: pointer;
+}
+.sidenav_list{
+    font-style: italic;
+}
+.sidenav_list a{
+    font-size: 5vw !important;
+}
+.parallax_part{
+    
+    height: 50vw !important;
+}
+
+.parallax_part .container{
+    margin-top: 30% !important;
+}
+.bold_fonts{
+    font-weight: 500 !important;
+}
+.light_white_hover:hover{
+    color: rgb(224, 214, 214);
+    transition: color 0.3s;
+}
+.blue_hover:hover{
+    color: rgb(3, 7, 241);
+    transition: color 0.3s;
+}
+.heading{
+    font-weight: bold;
+    font-size: 11vh !important;
+}
+.card_footer_element{
+    font-size: 20px !important;
+}
+.card_footer_comment{
+    font-size: 10px !important
+}
+.card_title:hover{
+    color: rgb(228, 128, 145) !important;
+}
+.quote_box div{
+    padding: 1% 5%;
+}
+.quote_box div p.quote{
+    font-size: 5vh !important; 
+    font-style: italic;
+}
+.side_icons{
+    border: none !important;
+    position: fixed !important; 
+    right: 0px !important;
+    bottom: 40vh !important;
+    width: 60px !important;
+}
+.side_icons a{
+    font-size: 22px; 
+}
+.join_us{
+    height: 430px;
+}
+.join_us div{
+    height: inherit;
+}
+.join_us .join_image{
+    background-image: url('../images/join us.jpg');
+    background-size: cover;
+}
+sup {
+    position: relative;
+    left: -30px;
+    opacity: 0.7;
+    font-size: 15px !important;
+}
+sub{
+    position: relative;
+    left: -5px;
+    top: 10px;
+    font-size: 15px !important;
+}
+.collapse_header .animated_text span{
+    opacity: 0.7;
+    
+}
+.remove_border{
+    border: none !important;
+}
+.dropdown_arrow{
+    display: none !important;
+    font-size: 30px !important;
+}
+
+ul.remove_border{
+    overflow: hidden !important;
+}
+.collapse_header .animated_text{
+    transition: 0.4s;
+}
+.collapse_header:hover .animated_text{
+    margin-left: -120px !important;
+    color: red;
+}
+.collapse_header:hover .animated_text span{
+    display: none !important;
+}
+.collapse_header:hover .animated_text .dropdown_arrow{
+    display: inline-block !important;
+}
+
+.hiding-it{
+    display: none;
+}
+
+
+@keyframes my_chatbox{
+    from{
+    bottom: -450px;
+    }
+    to{
+        bottom: -24px;
+    }
+}
+
+#my-content{
+    position: fixed;
+    right: 120px;
+    width: 350px !important;
+    height: 570px !important;
+    animation-name: my_chatbox;
+    animation-duration: 0.7s;
+    bottom: -24px;
+}
+.chatbox_emoji{
+    font-size: 65px !important;
+}
+.mychat{
+    margin-top: 235px !important;
+}
+#chatbox_button{
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    width: 50px ;
+    height: 50px;
+}
+#chatbox_button i{
+    font-size: 30px !important;
+    padding:5%;
+}
