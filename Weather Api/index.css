@@ -1,0 +1,11 @@
+body{
+    background-image: url("patrick-tomasso-biRNA1Nb9OM-unsplash.jpg");
+
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.capitalize{
+  text-transform: capitalize;
+}
