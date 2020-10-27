@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <h4 class="white-text center">Node Weather</h4>
+    
+        <div>
+            <h5 class="white-text center" id='week'>Friday</h5>            
+            <h5 class="white-text center" id="date">5 Sept 2019</h5>
+            <h5 class="white-text center" id="time">10:58 PM</h5>
+        </div>
+        <div class="row">
+                <div class="col s6">
+                    <div class="col s8 offset-s2 white card ">
+                    <div class="input-field">
+                            <input  id="first_name" type="text" class="validate capitalize">
+                            <label for="first_name">Enter City Name</label>
+                            <div class="col offset-s7">
+                            <button class="btn waves-effect waves-light" type="submit" name="action" id="submit">Submit
+                                    <i class="material-icons right">send</i>
+                                  </button>
+                                  </div>
+                                </div>
+
+                          </div>
+                </div>
+                <div class="col s6">
+                        <ul class="collection with-header">
+                                <li class="collection-header" id='city'><h4 class="center arr">Your City</h4>
+                                    <h4 class="center arr" id="city_temp">----</h4></li>
+                                <li class="collection-item"><div>Description<span class="right arr" id="desc">----</span></div></li>
+                                <li class="collection-item"><div>Min Temp<span class="right arr" id="min">----</span></div></li>
+                                <li class="collection-item"><div>Max Temp<span class="right arr" id="max">----</span></div></li>
+                                <li class="collection-item"><div>Humidity<span class="right arr" id="humidity">----</span></div></li>
+                                <li class="collection-item"><div>Pressure<span class="right arr" id="pressure">----</span></div></li>
+                                <li class="collection-item"><div>Wind Speed<span class="right arr" id="wind_speed">----</span></div></li>
+                                <li class="collection-item"><div>Wind Direction<span class="right arr" id="wind_direction">----</span></div></li>
+
+                              </ul>
+                </div>
+              </div>
+              <script src="weather.js"></script>
+</body>
+</html>
