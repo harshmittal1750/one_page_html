@@ -1,0 +1,9 @@
+.container{
+	background: #eee;
+	font-family: 'Open Sans', sans-serif;
+	padding: 20px 40px;
+}
+
+.intro{
+	font-style: italic;
+}
