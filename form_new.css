@@ -1,0 +1,31 @@
+form
+{
+text - align:center;
+}
+
+form input
+{
+  border - radius:5 px;
+  margin - top:10 px;
+  border:1 px solid
+#000;
+  width:300 px;
+  height:30 px;
+}
+textarea
+{
+border - radius:5 px;
+margin - top:10 px;
+border:1 px solid
+#000;
+width:300 px;
+height:100 px;
+}
+
+.submit
+{
+background - color:
+#000;
+color:
+#fff;
+}
