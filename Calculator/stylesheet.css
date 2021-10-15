@@ -1,0 +1,62 @@
+/* Create the Outer layout of the Calculator. */  
+.formstyle{  
+    width: 300px;  
+    height: 330px;  
+    margin: 20px auto;  
+    border: 3px solid skyblue;  
+    border-radius: 5px;  
+    padding: 25px;   
+    background-color: grey; 
+    text-align: center;
+    margin-top: 70px;
+}  
+
+table{
+    text-align: center;
+    padding-left: 35px;
+}
+  
+/* Display top horizontal bar that contain some information. */  
+h1{  
+    text-align: center;  
+    padding: 23px;  
+    background: #77A1D3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    color: rgba(209, 5, 5, 0.925);  
+}  
+
+input:hover{  
+    background-color:lightskyblue;  
+}  
+      
+*{  
+    margin: 0;  
+    padding: 0; 
+}  
+  
+/* It is used to create the layout for calculator button. */  
+.btn{  
+    width: 50px;  
+    height: 50px;  
+    font-size: 25px;  
+    margin: 2px;  
+    cursor: pointer;  
+    background-color:blue   ;  
+    color: white;  
+}  
+  
+/* It is used to display the numbers, operations and results. */  
+.textview{  
+    width: 223px;  
+    margin: 5px;  
+    font-size: 25px;  
+    padding: 5px;  
+    background-color:lightcyan;  
+}     
+
+body{
+    background: #77A1D3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
